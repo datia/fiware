@@ -1,0 +1,16 @@
+mongo:
+   image: mongo:3.6
+   command: --nojournal
+client:
+   image: iot-isel/fiware-client
+   ports:
+    - "8081:8081"   
+orion:
+   image: fiware/orion
+   links:
+     - mongo
+     - client
+   ports:
+     - "10026:1026"
+   command: -dbhost mongo
+

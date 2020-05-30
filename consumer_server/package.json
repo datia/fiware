@@ -1,0 +1,15 @@
+{
+  "name": "fiware-consumer",
+  "version": "1.0.0",
+  "description": "FIWARE consumer example. IoT course (MEET|MEIC|MERCM)",
+  "main": "consumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ND",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "util": "^0.12.3"
+  }
+}
