@@ -2,8 +2,8 @@
 
 This repository includes material to support FIWARE related concepts, lectured on the IoT master's course @ [ISEL](http://www.isel.pt), namely:
 * [Orion Context Broker (CB)](https://fiware-orion.readthedocs.io/en/master/)
-* CB consumer_server, written in Node.js
-* Examples on how CB works
+* CB consumer/cliente, written in Node.js
+* Examples on how to use the CB
 
 ## Installation
 

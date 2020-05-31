@@ -1,5 +1,5 @@
 #https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
-#docker build -t datia/fiware-client .
+#docker build -t iot-isel/fiware-client .
 FROM node:12
 
 # Create app directory
