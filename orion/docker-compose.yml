@@ -13,4 +13,14 @@ orion:
    ports:
      - "10026:1026"
    command: -dbhost mongo
+   environment:
+     - TZ=Europe/Lisbon
+node-red:
+    image: nodered/node-red:latest
+    links:
+     - orion
+    ports:
+      - "1880:1880"
+    environment:
+      - TZ=Europe/Lisbon
 
