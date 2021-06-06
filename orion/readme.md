@@ -14,5 +14,3 @@ Use a browser and:
 - Go to 'http://localhost:1880'. You should see the NodeRed Uaer interface.
 
 Do note the container does not use persistence storage. **Once the container is stop, all changes made are gone!**
-
-![maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)

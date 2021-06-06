@@ -16,3 +16,5 @@ Other operating systems may require additional steps.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+![maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
