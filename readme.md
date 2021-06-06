@@ -10,8 +10,8 @@ This repository includes material to support FIWARE related concepts, lectured o
 
 To install the required software, please consult the specific README, inside each folder. Start with the Consumer server.
 The demo solution was tested on:
-- Ubuntu 18.04 LTS. 
-- MacOS Big Sur
+- Ubuntu 18.04 LTS; 
+- MacOS Big Sur.
 
 Other operating systems may require additional steps.
 
