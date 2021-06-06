@@ -11,6 +11,6 @@ Assuming a linux installation, after you run `sudo docker-compose up`, the Conte
 Use a browser and:
 - Go to the URL 'http://localhost:8081/version'. You should see the text "FIWARE Consumers demo" in the console window. *This means the consumer server is running.* 
 - Go to 'http://localhost:10026/version'. You should receive a json response, meaning the *Orion context broker is running*.
-- Go to 'http://localhost:1880'. You should see the NodeRed Uaer interface.
+- Go to 'http://localhost:1880'. You should see the NodeRed user interface.
 
 Do note the container does not use persistence storage. **Once the container is stop, all changes made are gone!**
