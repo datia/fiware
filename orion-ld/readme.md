@@ -1,5 +1,7 @@
 # FIWARE Context Broker --- ORION-LD
-[Orion-LD](https://github.com/FIWARE/context.Orion-LD) is a fork from the original [Orion](https://github.com/telefonicaid/fiware-orion) from Telefonica, that implements the Linked Data version of the NGSIv2, the [NGSI-LD](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.01.01_60/gs_cim009v010101p.pdf) standard.
+[Orion-LD](https://github.com/FIWARE/context.Orion-LD) is a fork from the original [Orion](https://github.com/telefonicaid/fiware-orion) from Telefonica, that supports the Linked Data version of the NGSIv2, the [ETSI NGSI-LD 1.3.1. API specifications](https://www.etsi.org/standards#page=1&search=Context%20Information&title=1&etsiNumber=1&content=1&version=1&onApproval=1&published=1&historical=1&startDate=2020-01-01&endDate=2021-11-23&harmonized=0&keyword=&TB=854&stdType=&frequency=&mandate=&collection=&sort=1).
+
+**This is still under incubation **
 
 ## Instalation
 
@@ -14,4 +16,6 @@ Use a browser and:
 - Go to 'http://localhost:10026/version'. You should receive a json response, meaning the *Orion context broker is running*.
 - Go to 'http://localhost:1880'. You should see the NodeRed user interface.
 
-Do note the container does not use persistence storage. **Once the container is stop, all changes made are gone!**
+Do note the containers does not use persistence storage. 
+**Once the container is stop, all changes made are gone!**
+This is feature, not a bug. If you want to user persistence, just check the Docker-hub entry of each container. For example, the [node-red](https://hub.docker.com/r/nodered/node-red/).

@@ -1,29 +1,29 @@
-mongo:
-   image: mongo:3.6
-   hostname: mongo-db
-   ports:
-    - "27017:27017" 
-   command: --nojournal
-client:
-   image: iot-isel/fiware-client
-   ports:
-    - "8081:8081"   
-orion:
-   image: fiware/orion-ld
-   links:
-     - mongo
-     - client
-   ports:
-     - "10026:1026"
-   command: -dbhost mongo-db -logLevel DEBUG
-   environment:
-     - TZ=Europe/Lisbon
-node-red:
-    image: nodered/node-red:latest
-    links:
-     - orion
+services:
+  mongo:
+    image: mongo:3.6
+    hostname: mongo-db
     ports:
-      - "1880:1880"
+      - "27017:27017" 
+    command: --nojournal
+  client:
+    image: iot-isel/fiware-client
+    ports:
+      - "8081:8081"   
+  orion:
+    image: fiware/orion-ld
+    links:
+      - mongo
+      - client
+    ports:
+      - "10026:1026"
+    command: -dbhost mongo-db -logLevel DEBUG
     environment:
       - TZ=Europe/Lisbon
-
+  node-red:
+      image: nodered/node-red:latest
+      links:
+      - orion
+      ports:
+        - "1880:1880"
+      environment:
+        - TZ=Europe/Lisbon

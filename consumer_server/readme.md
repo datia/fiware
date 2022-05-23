@@ -1,11 +1,11 @@
 # FIWARE Consumer
 
-To test the subscription feature of ORION it is necessary to settle a server acessed using HTTP. 
+To test the subscription feature of ORION, it is necessary to settle a server acessed using HTTP. 
 
 ## Instalation
 
 Please refer to the Node.js installation [instructions](
-https://nodejs.org/en/download/package-manager/). If dependencies are missing, use `npm install`.
+https://nodejs.org/en/download/package-manager/) for your OS. If dependencies are missing, use `npm install` to fetch them.
 
 Once you have Node.js installed ( including all necessary dependencies) you can run the server using `node consumer.js`. The server will be listening on port **8081**. Just check if everything is OK putting the following URL on the browser 'http://localhost:8081/version'. You should see the text "FIWARE Consumers demo".
 Once the application is verified to run, you can build a docker image using

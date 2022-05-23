@@ -1,4 +1,4 @@
-//Copyright 2020 Nuno Datia, ISEL
+//Copyright 2020-2022 Nuno Datia, ISEL
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 //
@@ -32,9 +32,9 @@ app.use(express.urlencoded());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-// Just for simply and quick test
+// Just for a simple and quick test
 app.get('/version', function (req, res) {
-   	  data = "FIWARE Consumers demo";
+   	data = "FIWARE Consumers demo";
       console.log(data);
       res.end(data);
    

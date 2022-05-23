@@ -11,11 +11,14 @@ This repository includes material to support FIWARE related concepts, lectured o
 To install the required software, please consult the specific README, inside each folder. Start with the Consumer server.
 The demo solution was tested on:
 - Ubuntu 18.04 LTS; 
-- MacOS Big Sur.
+- MacOS Big Sur;
+- MocOS Monterey.
 
 Other operating systems may require additional steps.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
 ![maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+[![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
