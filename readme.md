@@ -8,11 +8,11 @@ This repository includes material to support FIWARE related concepts, lectured o
 
 ## Installation
 
-To install the required software, please consult the specific README, inside each folder. Start with the Consumer server.
+The solution uses DOCKER to setup all the necessary software. **It is necessary to have the latest Docker engine for your operating system.**. More information at [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/).
+To install other required software, please consult the specific README, inside each folder. Begin with the Consumer server.
 The demo solution was tested on:
 - Ubuntu 18.04 LTS; 
-- MacOS Big Sur;
-- MocOS Monterey.
+- MacOS Big Sur, MacOS Monterey, MacOS Ventura
 
 Other operating systems may require additional steps.
 
