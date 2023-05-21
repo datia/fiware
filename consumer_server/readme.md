@@ -1,6 +1,6 @@
 # FIWARE Consumer
 
-To test the subscription feature of ORION, it is necessary to settle a server acessed using HTTP. 
+To test the subscription feature of ORION, it is necessary to settle a server acessed using HTTP.
 
 ## Instalation
 
@@ -12,4 +12,4 @@ Once the application is verified to run, you can build a docker image using
 
 `docker build -t iot-isel/fiware-client .`.
 
-If everything works fine, you can run docker compose on the ORION context broker folder. **You should shutdown the server before build the image.** 
+If everything works fine, you can run docker compose on the ORION context broker folder. **You should shutdown the server before build the image.**

@@ -71,6 +71,15 @@ app.post('/pressure', function (req, res) {
       res.end(r);   
 })
 
+app.post('/subecho', function (req, res) {
+      
+   notification = req.body;
+   r = util.format("FIWARE Consumers demo: POST /subecho: Subs %s",notification.subscriptionId);
+   console.log(r)
+   console.log(notification);
+   res.end(r);
+
+})
 
 var server = app.listen(8081, function () {
    var host = server.address().address

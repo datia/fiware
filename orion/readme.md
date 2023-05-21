@@ -13,4 +13,4 @@ Use a browser and:
 - Go to 'http://localhost:10026/version'. You should receive a json response, meaning the *Orion context broker is running*.
 - Go to 'http://localhost:1880'. You should see the NodeRed user interface.
 
-Do note the container does not use persistence storage. **Once the container is stop, all changes made are gone!**
+Do note the container does not use persistence storage. **Once the container is stopped, all changes are gone!**
