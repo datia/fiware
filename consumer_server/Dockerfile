@@ -1,6 +1,6 @@
 #https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 #docker build -t iot-isel/fiware-client .
-FROM node:20-alpine
+FROM node:22-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
