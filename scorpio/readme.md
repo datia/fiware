@@ -1,4 +1,4 @@
-# FIWARE Context Broker --- SCORPIO
+# FIWARE Context Broker --- SCORPIOi
 
 ## Instalation
 
