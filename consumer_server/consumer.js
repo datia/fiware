@@ -84,5 +84,17 @@ app.post('/subecho', function (req, res) {
 var server = app.listen(8081, function () {
    var host = server.address().address
    var port = server.address().port
+   process.on('SIGINT', () => {
+      console.log('Shutting down...');
+      process.exit(0);
+   });
+console.log(`
+██╗ ██████╗ ████████╗     ██████╗██╗     ██╗███████╗███╗   ██╗████████╗
+██║██╔═══██╗╚══██╔══╝    ██╔════╝██║     ██║██╔════╝████╗  ██║╚══██╔══╝
+██║██║   ██║   ██║       ██║     ██║     ██║█████╗  ██╔██╗ ██║   ██║   
+██║██║   ██║   ██║       ██║     ██║     ██║██╔══╝  ██║╚██╗██║   ██║   
+██║╚██████╔╝   ██║       ╚██████╗███████╗██║███████╗██║ ╚████║   ██║   
+╚═╝ ╚═════╝    ╚═╝        ╚═════╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   
+`);
    console.log("Consumers example app listening at http://%s:%s", host, port)
 })
