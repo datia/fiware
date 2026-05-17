@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgis/postgis
+    platform: linux/amd64
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_USER: ngb
+      POSTGRES_PASSWORD: ngb
+      POSTGRES_DB: ngb
+  scorpio:
+    image: scorpiobroker/all-in-one-runner:java-latest
+    environment:
+      DBHOST: postgres
+    ports:
+      - "9090:9090"
+    depends_on:
+      - postgres

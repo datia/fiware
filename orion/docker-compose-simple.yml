@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:6
+    command: --nojournal
+    ports:
+      - "27017:27017"
+
+  orion:
+    image: telefonicaiot/fiware-orion:latest
+    depends_on:
+      - mongo
+    ports:
+      - "10026:1026"
+    command: -dbURI mongodb://mongo:27017 -logLevel DEBUG
+
