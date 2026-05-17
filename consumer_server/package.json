@@ -1,7 +1,7 @@
 {
   "name": "fiware-consumer",
   "version": "1.0.0",
-  "description": "FIWARE consumer example. IoT course (MEET|MEIC|MERCM)",
+  "description": "FIWARE consumer example. IoT course (MEET|MEIC)",
   "main": "consumer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
